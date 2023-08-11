@@ -1,0 +1,19 @@
+
+AssemblerApplication1.hex:     file format ihex
+
+
+Disassembly of section .sec1:
+
+00000000 <.sec1>:
+   0:	00 e2       	ldi	r16, 0x20	; 32
+   2:	1f ef       	ldi	r17, 0xFF	; 255
+   4:	25 9a       	sbi	0x04, 5	; 4
+   6:	2d 9a       	sbi	0x05, 5	; 5
+   8:	2f ef       	ldi	r18, 0xFF	; 255
+   a:	2a 95       	dec	r18
+   c:	f1 f7       	brne	.-4      	;  0xa
+   e:	2d 98       	cbi	0x05, 5	; 5
+  10:	2f ef       	ldi	r18, 0xFF	; 255
+  12:	2a 95       	dec	r18
+  14:	f1 f7       	brne	.-4      	;  0x12
+  16:	f7 cf       	rjmp	.-18     	;  0x6
