@@ -16,7 +16,8 @@
 
 ; Set up initial conditions
 ldi r16, (1 << LED_BIT)   ; Create a mask for the LED bit
-ldi r17, 0xFF            ; Set all bits of PORTB to output (for LED control)
+; remove the below line?
+; ldi r17, 0xFF            ; Set all bits of PORTB to output (for LED control)
 
 ; Set LED pin as output
 sbi LED_DDR, LED_BIT
