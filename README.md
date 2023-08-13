@@ -23,3 +23,7 @@ Data: The data field contains the actual data bytes encoded in hexadecimal forma
 
 Checksum: The checksum field is a two-digit hexadecimal value that represents the checksum of the record. It is used to verify the integrity of the record.
 ```
+
+
+### Reference
+- https://jimmywongiot.com/2021/04/20/format-of-intelhex/
