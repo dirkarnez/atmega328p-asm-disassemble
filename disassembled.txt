@@ -15,5 +15,5 @@ Disassembly of section .sec1:
    e:	2d 98       	cbi	0x05, 5	; 5
   10:	2f ef       	ldi	r18, 0xFF	; 255
   12:	2a 95       	dec	r18
-  14:	f1 f7       	brne	.-4      	;  0x12
+  14:	f1 f7       	brne	.-4      	;  0x12 (.-4 means current program counter address 0x14 - 0x4 = 0x10, and then program counter will add 1, which is 1 instruction (2 bytes in length, therefore, 0x10 + 0x2) = 0x12, the answer is 0x12
   16:	f7 cf       	rjmp	.-18     	;  0x6
